@@ -1,0 +1,491 @@
+body{
+	background-color: #2d3a54 ; 
+	background-size: contain;
+}
+#intro{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80%;
+	margin:0;
+	padding: 0
+}
+
+#intro i{
+	font-size: 5rem
+}
+
+#intro span{
+		display: block;
+		font-size: 1.5rem;
+		padding: 0.2rem;
+}
+
+@media screen and (max-width: 700px){
+	#intro i{
+		font-size: 3rem
+	}
+
+}
+
+/*SearchBar*/
+#search {
+    padding : 10px 10px;
+    border : none;
+    position:relative;
+    left: 6%;
+    width : 75%;
+}
+
+#search input {
+    width :100%;
+    border:1px solid black;
+    border-radius : 60px;
+    padding : 10px 55px;
+}
+
+@media screen and (max-width: 700px){
+	#search input{
+		width: 90%;
+		padding : 8px 55px;
+	}
+}
+
+#search input:focus {
+    outline : none;
+}
+
+#searchicon {
+    position: absolute;
+    top : 21px;
+    left : 9%;
+}
+
+#speechicon{
+	position: absolute;
+    top : 21px;
+    left : 101%;
+}
+
+@media screen and (max-width: 700px){
+	#searchicon {
+	    position: absolute;
+	    top : 21px;
+	    left : 12%;
+	}
+	#speechicon{
+		position: absolute;
+	    top : 21px;
+	    left : 84%;
+	}
+}
+
+/*Notification Bell*/
+#notification i{
+	font-size: 1.5rem;
+	width: 1.5rem;
+	position: absolute;
+	top:21px;
+	left:88%;
+	color: #262b27bd;
+	margin-top: 0.4%;
+}
+
+@media screen and (max-width: 700px){
+	#notification i{
+		position: absolute;
+		left:82%;
+	}
+}
+
+/*Account details*/
+#account{
+	position: absolute;
+	left:92%;
+}
+
+#account img{
+	width:4rem;
+	height: 4rem;
+	border-radius: 50%;
+}
+
+@media screen and (max-width: 700px){
+	#account{
+		position: absolute;
+		left:88%;
+	}
+	#account img{
+		width:2rem;
+		height: 2.8rem
+	}
+}
+
+
+/*MAIN*/
+
+main{
+	margin-left: 5%;
+	margin-top: 3%;
+	width: 60%;
+	height: auto;
+	display: inline-block;
+}
+
+@media screen and (max-width: 420px){
+	main{
+		width: 100%;
+	}
+}
+
+.detail{
+	display: flex;
+	background-color: #111f3d;
+	height:auto;
+}
+
+.detail img{
+	width: 50%;
+}
+
+@media screen and (max-width: 420px){
+	.detail img{
+		width: 30%;
+	}
+}
+
+.detail #control{
+	margin: 1% 5%;
+}
+
+#control h2{
+	display: inline-block;
+	font-weight: 900;
+	color: white;
+}
+
+@media screen and (max-width: 420px){
+	#control h2{
+		font-size: 0.6rem
+	}
+}
+
+#control p{
+	color: #beb1b1;
+	margin-bottom: 50px;
+	text-align: justify;
+}
+
+@media screen and (max-width: 420px){
+	#control p{
+		font-size: 0.5rem
+	}
+}
+
+.btn{
+	background-color: #06705c;
+	text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: .5em 0.8em;
+}
+
+/*Playlist Songs*/
+.container{
+	display: flex;
+	margin-top: 1%;
+	margin-bottom: -0.5%;
+	background-color: #15114c87
+}
+
+.container span{
+	margin-top: 20px;
+	margin-left: 10px
+}
+
+.container img{
+	width: 50px;
+	height:50px;
+	margin: 10px ;
+}
+
+.container img:hover{
+	transform: scaleX(1.1);
+}
+
+.container #song-name{
+	margin-top: 10px
+}
+
+.container #song-name:hover{
+	transform: scaleX(1.1);
+}
+
+#song-name .white{
+	font-size: 1.1rem;
+	font-weight:900;
+}
+
+#song-name .grey{
+	font-size: 0.8rem
+	font-weight:100;
+}
+
+.container .push{
+	margin:20px 20px 0 auto;
+}
+
+.container i{
+	margin:20px 20px 0 0;
+}
+
+.container i:hover{
+	transform: scaleY(1.1);
+}
+
+/*Aside*/
+aside {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin-left: 1%;
+    margin-top: 3%
+}
+
+@media screen and (max-width: 420px){
+	aside{
+		width: 100%;
+	}
+}
+
+.widget-title{
+	font-size: 2rem;
+	font-family:  cursive;
+	font-weight: 800;
+}
+
+/*Similar Artists*/
+
+.container2{
+	display: flex;
+	margin-top: 2%;
+	margin-bottom: -0.5%;
+}
+
+.container2 img{
+	width: 6rem;
+	height:70px;
+	margin: 10px ;
+}
+
+.container2 img:hover{
+	transform: scaleX(1.2);
+}
+
+.container2 #song-name p{
+	font-size: 1rem;
+	font-weight: 200
+}
+
+.container2 #song-name:hover{
+	transform: scaleX(1.1);
+}
+
+.container2 i{
+	margin-left: auto; 
+	margin-top: 2%;
+}
+
+/*Recently Played*/
+
+#recent{
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.container3{
+	display: flex;
+	margin-top: 2%;
+	margin-bottom: -1%;
+}
+
+.container3 img{
+	width: 50px;
+	height:50px;
+	margin: 10px ;
+}
+
+.container3 img:hover{
+	transform: scaleX(1.2);
+}
+
+.container3 #song-name p{
+	font-size:0.8rem;
+	font-weight: 100
+}
+
+.container3 #song-name:hover{
+	transform: scaleX(1.2);
+}
+
+.container3 i{
+	margin-left: auto; 
+	margin-top: 5%;
+}
+
+.container3 i:hover{
+	transform: scaleX(1.2);
+}
+
+/*Bottom Playbar*/
+#bottom{
+	position: fixed;
+	bottom: 0px;
+	left:0px;
+	margin-left: -20px;
+	margin-bottom: -10px;
+	width: 101%;
+	background-color: #3e3e3e;
+	padding: 0px;
+}
+
+#bottom i{
+	color: red;
+	margin:10px;
+	padding: 10px;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+#bottom i:hover{
+	transform: scaleX(1.5);
+}
+
+#ply-btns{
+	display: inline-block;
+	margin-left: 2%
+}
+
+#play{
+	display: inline-block;
+	margin-left: 20%;
+}
+
+#volume{
+	display: inline-block;
+	margin-left: 10%;
+	margin-bottom: 1%;
+}
+
+#play input{
+	size: 0.1rem;
+}
+
+@media screen and (max-width:1450px){
+	#bottom i{
+		margin:8px;
+		padding: 8px;
+		font-size: 1rem
+	}
+}
+
+@media screen and (max-width:1300px){
+	#bottom i{
+		margin:5px;
+		padding: 2px;
+	}
+}
+
+@media screen and (max-width:1150px){
+	#bottom i{	
+		margin:2px;
+		padding: 1px;
+	}
+}
+
+@media screen and (max-width:980px){
+	#bottom i{	
+		margin:0.5em;
+		padding: 0.5em;
+	}
+
+	#volume{
+		display: none;
+	}
+}
+
+@media screen and (max-width:650px){
+	#bottom i{	
+		font-size: 0.6rem;
+	}
+	#play{
+		margin-left: 10%;
+		margin-bottom: 1%
+	}
+}
+
+@media screen and (max-width:450px){
+	#bottom i{	
+		margin:2px;
+		padding: 1px;
+		font-size: 0.8rem
+	}
+	#play{
+		margin-left: 1%
+	}
+}
+
+@media screen and (max-width:365px){
+	#ply-btns{
+		display: none;
+	}
+	#play{
+		margin-left: 20%
+	}
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width : 100%;
+    margin : 10px 0px;
+    outline : none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color : white;
+    width : 100%;
+    height : 2px;
+}
+input[type="range"]::-webkit-slider-thumb {
+    border-radius : 50%;
+    width : 25px;
+    height : 25px;
+    -webkit-appearance: none;
+    margin-top : -10px;
+    box-shadow: 1px 1px 10px #8319b1, 0px 0px 10px #8319b1;
+    background : #dd244e;
+}
+
+
+
+
+/*Common classes*/
+.flex{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.inlineblock{
+	display: inline-block;
+	margin: 0.5rem 0 0 0.5rem;
+}
+
+/*Common Color Classes*/
+.white{
+	color: white;
+}
+.grey{
+	color: grey;
+}
